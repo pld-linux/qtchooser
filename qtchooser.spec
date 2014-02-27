@@ -7,7 +7,7 @@ Summary(pl.UTF-8):	Qt Chooser - wrapper do wyboru wersji binariów programistycz
 Name:		qtchooser
 Version:	39
 %define	githash	g4717841
-Release:	1
+Release:	2
 License:	LGPL v2.1 with Digia Qt LGPL Exception v1.1 or GPL v3
 Group:		Development/Tools
 Source0:	http://macieira.org/qtchooser/%{name}-%{version}-%{githash}.tar.gz
@@ -80,6 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %doc LGPL_EXCEPTION.txt
 %dir /etc/xdg/qtchooser
+%dir %{_prefix}/lib/qtchooser
 %attr(755,root,root) %{_prefix}/lib/qtchooser/qtchooser
 %attr(755,root,root) %{_prefix}/lib/qtchooser/assistant
 %attr(755,root,root) %{_prefix}/lib/qtchooser/designer
